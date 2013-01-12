@@ -41,6 +41,9 @@
   }
   
   p._end = p._cancel = function(e) {
+    if(!this.mouseClick && !this.prevY)
+      return;
+      
     this.$el.trigger('scroll:end');
     
     // trigger click only when mouse moved less then 1 px
