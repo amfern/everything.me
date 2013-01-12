@@ -1,0 +1,39 @@
+Let's make a mobile news web app!
+
+FILES AND FOLDERS
+-----------------
+/design - psd and png
+/data - item data in static json
+
+WHAT IT DOES
+-------------
+1. Upon load, data is requested (specified below) via ajax and presented as list items.
+2. The list should be vertically scrollable.
+3. Selecting an item from the list
+   * Animates in the article view
+   * Displays the appropriate data in it
+   * Changes the list item style to "selected".
+4. Clicking on the "list" button toggles the article view.
+5. Swiping horizontally on an article, navigates between them (next - rtl swipe, previous - ltr swipe).
+
+BONUS FEATURE
+--------------
+1. Save json data to localStorage and retrieve from it on next page loads.
+2. Font embedding (Open Sans)
+3. Retina display adjustments (regarding the button image)
+
+DEV REQUIREMENTS
+----------------
+* Use object oriented, readable, vanilla code. A JS toolset like jQuery or Zepto is fine but no mobile frameworks.
+* Please implement the swipe detection yourself.
+* Strive for efficiency and scalability.
+* Use HTML5 and CSS3 like a mad man. (Though styling has been kept minimal)
+* Make sure it works well on your personal smartphone BUT it should be able to fit any screen width. For instance, changing device orientation or displaying in different screen sizes.
+
+Feel free to contact me for any reason whatsoever.
+GOOD LUCK!
+
+Ran Ben Aharon
+ran@doat.com
+054-2170908
+
