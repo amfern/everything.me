@@ -17,7 +17,7 @@
   
   p._start = function(e) {
     this.mouseClick = true;
-    this.touchX = this._getPositionX(e);
+    this.lastX = this.touchX = this._getPositionX(e);
   }
   
   p._move = function(e) {
@@ -33,7 +33,7 @@
   
   p._end = p._cancel = function(e) {
     this.distanceX = this.lastX - this.touchX;
-    if(this.touchX && Math.abs(this.distanceX) > 100)
+    if(this.touchX && Math.abs(this.distanceX) > $(window).width() / 25))
       this.$el.trigger('swiper:swipe', [e, this.distanceX > 0 ? 1 : -1]);
         
     this.mouseClick = false;
